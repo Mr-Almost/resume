@@ -1,42 +1,34 @@
 {
-  "name": "tweenjs",
-  "npmName": "tweenjs",
-  "version": "1.0.0",
-  "description": "TweenJS is a simple tweening library for use in Javascript. It was developed to integrate well with the EaselJS library, but is not dependent on or specific to it (though it uses the same Ticker and Event classes by default). It supports tweening of both numeric object properties & CSS style properties.",
-  "main": "tweenjs.js",
-  "directories": {
-    "doc": "docs",
-    "example": "examples",
-    "lib": "lib",
-    "test": "tests"
-  },
-  "npmFileMap": [
-    {
-      "basePath": "lib",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
+  "name": "@tweenjs/tween.js",
+  "description": "Super simple, fast and easy to use tweening engine which incorporates optimised Robert Penner's equations.",
+  "version": "17.2.0",
+  "main": "src/Tween.js",
+  "homepage": "https://github.com/tweenjs/tween.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CreateJS/TweenJS.git"
+    "url": "https://github.com/tweenjs/tween.js.git"
   },
-  "keywords": [
-    "createjs",
-    "tweenjs",
-    "gskinner",
-    "javascript",
-    "html5",
-    "tween",
-    "motion",
-    "ease",
-    "animate"
-  ],
-  "author": "gskinner.com, inc.",
-  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/CreateJS/TweenJS/issues"
+    "url": "https://github.com/tweenjs/tween.js/issues"
   },
-  "homepage": "https://createjs.com/tweenjs/"
+  "license": "MIT",
+  "keywords": [
+    "tween",
+    "interpolation"
+  ],
+  "dependencies": {},
+  "scripts": {
+    "test": "npm run test-unit && npm run test-correctness && npm run test-style",
+    "test-unit": "nodeunit test/unit/nodeunitheadless.js",
+    "test-correctness": "jshint --config test/jshintrc src/Tween.js",
+    "test-style": "jscs --config test/jscs.json src/Tween.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "author": "tween.js contributors (https://github.com/tweenjs/tween.js/graphs/contributors)",
+  "devDependencies": {
+    "jscs": "^2.11.0",
+    "jshint": "^2.9.4",
+    "nodeunit": "^0.9.5",
+    "semantic-release": "^6.3.2"
+  }
 }

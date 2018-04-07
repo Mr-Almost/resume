@@ -1,12 +1,6 @@
-_assets
-build
+assets/
 bower.json
-docs
-examples
-extras
-icon.png
-lib/**-NEXT**.js
-spikes
-src
-tests
-VERSIONS.txt
+docs/
+examples/
+CONTRIBUTING.md
+test/

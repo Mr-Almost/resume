@@ -1,9 +1,3 @@
-
-       
-/* setTimeout(function(){
-siteWelcome.classList.remove('active')
-   },100) */
- 
 let specialTags=document.querySelectorAll('[data-x]')
 for(let i=0;i<specialTags.length;i++)
 {
@@ -13,6 +7,8 @@ for(let i=0;i<specialTags.length;i++)
 setTimeout(function () {
 findCloset();
 },500)
+
+
 
 
 
@@ -98,6 +94,4 @@ for(let i=0;i<aTags.length;i++){
 
 }
 }
-
-
 
