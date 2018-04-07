@@ -1,4 +1,4 @@
-<script>
+
        
 /* setTimeout(function(){
 siteWelcome.classList.remove('active')
@@ -101,4 +101,3 @@ for(let i=0;i<aTags.length;i++){
 
 
 
-</script>
