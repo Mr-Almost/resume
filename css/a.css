@@ -66,26 +66,12 @@ section.skills .progressBar > .progress{height: 100%;background: #e6686a;width:5
 section.skills.offset .progress{transform:translateX(-100%)}
 
 
-section.portfolio{ max-width: 940px; margin-left:auto;margin-right:auto;margin-top: 60px;}
+section.portfolio{ max-width: 720px; margin-left:auto;margin-right:auto;margin-top: 60px;margin-bottom:100px;}
 section.portfolio >h2{text-align: center;color:#3d4451;font-size: 34px;line-height: 1.2;font-weight: 600;}
 section.portfolio {text-align: center;}
-section.portfolio > nav {text-align: center;}
-section.portfolio > nav > ol{padding:0 0 ;margin: 0 auto;}
-section.portfolio > nav > ol > li{float: left;margin-left:40px;}
-section.portfolio > nav  ol  li:first-child{margin-left: 0px;}
-section.portfolio > nav .bar{height:5px;background:#FFFFFF;margin-top: 10px;margin-bottom:100px;border-radius: 2px;}
-section.portfolio > nav{display:inline-block;vertical-align: top;}
-section.portfolio > nav .bar-inner{height:100%;background: #E8676B;width:10%; border-radius: 2px; margin-left: 100px;}
-section.portfolio > nav{display: inline-block;vertical-align: top;margin-top: 32px;}
-section.portfolio > nav .bar{height: 5px;background: white;margin-top: 5px;margin-bottom: 28px;border-radius: 2px;}
-section.portfolio > nav > ol > li{float: left;margin-left: 40px;cursor: pointer;}
-section.portfolio > nav .bar-inner{height: 100%;background: #E6686A;border-radius: 2px;transition: all 0.3s;}
-section.portfolio > nav .bar.state-1 .bar-inner{margin-left: 0;width: 50px;}
-section.portfolio > nav .bar.state-2 .bar-inner{margin-left: 65px;width: 50px;}
-section.portfolio > nav .bar.state-3 .bar-inner{margin-left: 140px;width: 96px;}
-section.portfolio .works{position: relative;}
-section.portfolio .works > .big,section.portfolio .works > .small {position: absolute;}
-
+section.portfolio >h2{margin-bottom:30px;}
+.swiper-button-prev {background-color: white;width:64px;height:64px;border-radius:50%;left:auto;right:105%;top:320px;}
+.swiper-button-next {background-color: white;width:64px;height:64px;border-radius:50%;left:105%;right:auto;top:320px;}
 
 
 [data-x].offset{transform:translateY(100px);}
@@ -95,3 +81,4 @@ section.portfolio .works > .big,section.portfolio .works > .small {position: abs
 .wrapper{width:200px;height:200px;border:1px solid red;position:relative;}
   
 
+.swiper-container {width: 720px;height: 480px;}
