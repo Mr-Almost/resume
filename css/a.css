@@ -78,3 +78,14 @@ section.portfolio .swiper-container {width: 720px;height: 480px;}
 [data-x]{transform:translateY(0);transition:all 0.5s;}
 
 
+section.message >h2{text-align: center;color:#3d4451;font-size: 34px;line-height: 1.2;font-weight: 600;}
+section.message >ol{
+    max-width:700px;
+    margin:0 auto;
+    border-top:1px solid #ddd;
+    margin-top:32px;
+}
+section.message >ol>li{
+ padding:16px;
+ border-bottom:1px solid #ddd;
+}
