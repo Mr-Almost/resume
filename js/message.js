@@ -59,7 +59,9 @@ var controller={
     bindEvents:function(){
             this.form.addEventListener('submit',(e)=>{
              e.preventDefault()
-             this.saveMessage()
+             if(!this.form.querySelector('input').value.length){ this.form.querySelector('input').disabled = 'disabled'; alert('请输入内容')}// 含有disabled属性的表单字段将不会被提交
+             else{ this.saveMessage()}
+            
             })
     },
     saveMessage:function(){
