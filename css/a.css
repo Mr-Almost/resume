@@ -73,6 +73,7 @@ section.portfolio >h2{margin-bottom:30px;}
 section.portfolio .swiper-button-prev {background-color: white;width:64px;height:64px;border-radius:50%;left:auto;right:105%;top:320px;}
 section.portfolio .swiper-button-next {background-color: white;width:64px;height:64px;border-radius:50%;left:105%;right:auto;top:320px;}
 section.portfolio .swiper-container {width: 720px;height: 480px;}
+section.portfolio .swiper-container img{width: 720px;height: 480px;}
 
 [data-x].offset{transform:translateY(100px);}
 [data-x]{transform:translateY(0);transition:all 0.5s;}
