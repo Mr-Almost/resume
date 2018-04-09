@@ -10,62 +10,6 @@
     <script src="./node_modules/swiper/dist/js/swiper.min.js"></script>
    
 </head>
-<style type="text/css">
-
-.wrapper{
-    width:200px;
-    height:200px;
-    position:relative;
-  }
-  
-  .loading::before,.loading::after{
-    content:'';
-    position:absolute;
-    width:10px;
-    height:10px;
-    background:black;
-    border-radius:50%;
-    top:0;
-    left:0;
-    bottom:0;
-    right:0;
-    margin:auto;
-    animation: s 1s linear infinite;
-  }
-  
-  .loading::after{
-    animation-delay: 0.5s;
-  }
-  
-  @keyframes s{
-    0%{
-      width:0px;height:0px;opacity:1;
-    }
-    100%{
-      width:100px;height:100px;opacity:0;
-    }
-    
-  }
-    .icon {
-       width: 1em; height: 1em;
-       vertical-align: -0.15em;
-       fill: currentColor;
-       overflow: hidden;
-    }
-    .site-welcome{
-        display:none;
-        position:fixed;
-        top:0;left:0;width:100%;height:100%;
-        justify-content:center;
-        align-items: center;
-        background:#888;
-        z-index:10;
-    }
-    .site-welcome.active{
-        display:flex;
-    }
-
-</style>
 <body>
     <!-- <div id="siteWelcome" class="site-welcome active">
         <div class="loading"></div>
@@ -106,7 +50,7 @@
   
     </div>
     <main>
-        <div data-x id="siteAbout" class="userCard ">
+        <div data-x   id="siteAbout" class="userCard ">
             <div class="PictureAndText clearfix">
             <div class="picture" >
                 <img src="./picture.PNG" style="width:295px; height:342px;" alt="头像">
@@ -260,6 +204,7 @@
 
     <section data-x id="siteWorks" class="portfolio"> 
         <h2>作品集</h2>
+    <div id="mySlides">
         <div class="swiper-container">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
@@ -270,38 +215,19 @@
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
-         
-            <!-- If we need navigation buttons -->
-     
-         
-        
         </div>
-
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
-
+    </div>
     </section>
-    <script>
-        var mySwiper = new Swiper ('.swiper-container', {
-          // Optional parameters
-          loop: true,
-      
-          // If we need pagination
-          pagination: {
-            el: '.swiper-pagination',
-          },
-      
-          // Navigation arrows
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-      
-     
-        })
-        </script>
     <script src="./tween/src/Tween.js"></script>
-  <script src="./main.js"></script>
+    <!-- 模块化-->
+    <script src="./js/init-swiper.js"> </script>
+    <script src="./js/sticky-topbar.js"></script>
+    <script src="./js/auto-slide-up.js"> </script>
+    <script src="./js/smoothly-navigation.js"> </script>
+    
+  
 
 
 </body>
