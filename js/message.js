@@ -3,8 +3,8 @@ var view=document.querySelector('section.message')
 
 var model={
     init:function(){
-        var APP_ID = 'AAnijDKsSjmjCeLvXIz2xtrb-gzGzoHsz';
-        var APP_KEY = 'TyisuXFL3yYz6RDpsMrq2Kuh';
+        var APP_ID = 'FbwjDg1GYWxQ2a1y0lcEN2Fp-gzGzoHsz';
+        var APP_KEY = '2TxuJud8jkYvaPSBETdmytiQ';
         AV.init({appId: APP_ID,appKey: APP_KEY});
       },
     //获取数据
